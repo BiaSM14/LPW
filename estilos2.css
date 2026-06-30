@@ -30,6 +30,10 @@ nav {
 #menu a {
   color: black;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 #menu a:hover {
