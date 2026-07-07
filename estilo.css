@@ -1,5 +1,5 @@
 body {
-    color: goldenrod;
+    color: black;
     background: #d5c8b9;
     line-height: 2;
     font-family: 'EB Garamond', serif;
@@ -8,7 +8,7 @@ body {
 
 nav {
   background-color: #8a6f4d;
-  padding: 10px;
+  padding: 20px;
 }
 
 #menu {
@@ -28,19 +28,34 @@ nav {
   color: #1a2536;
   border-bottom: 2px solid #c9a063;
 }
+
+header h1 {
+    text-align: center;
+    margin: 0 0 15px;
+    font-family: "Caesar dressing", serif;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
  
 #shimeji {
   position: fixed;
   bottom: 0;
   left: 100px;
-
   width: 96px;
-
   user-select: none;
   cursor: grab;
-
   z-index: 999999;
-
   transition: transform 0.15s linear;
 }
 .rostinho {
@@ -58,7 +73,7 @@ nav {
     line-height: 1.25;
     max-width: 680px;
     margin: 0 0 18px;
-    color: #6b4f14;
+    color: black;
 }
  
 .rostinho h2 span {
@@ -109,7 +124,7 @@ nav {
 }
  
 .card {
-    background: rgb(255, 225, 148);
+    background: #c7b6a2;;
     padding: 30px 26px;
     border: 1px solid #c9a063;
     border-top: 1px solid #8a6d3b;
@@ -125,7 +140,27 @@ nav {
 }
  
 .card p {
-    color: goldenrod;
+    color: rgb(101, 67, 33);
     font-size: 0.95rem;
     font-family: 'EB Garamond', serif;
+}
+
+footer {
+    background: #8a6f4d;
+    color: #d5c8b9;
+    padding: 28px 32px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+footer p {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.82rem;
+    opacity: 0.6;
 }
