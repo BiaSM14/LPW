@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     color: black;
     font-family: "Cinzel", serif;
-    font-size: 38px;
+    font-size: 34px;
     clear: both;
     padding-top: 20px;
 }
@@ -10,7 +10,7 @@ h1 {
 h2 {
     color: black;
     font-family: "Cinzel", serif;
-    font-size: 37px;
+    font-size: 30px;
     clear: both;
     padding-top: 20px;
     margin-left: 10px;
@@ -21,10 +21,11 @@ p {
     font-family: "Lora", serif;
     font-size: 17px;
     padding-right: 150px;
+    flex: 1;
 }
 
 .imagem {
-    width: 250px;
+    width: 170px;
     height: auto;
     float: left;
     margin-right: 15px;

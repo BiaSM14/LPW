@@ -1,214 +1,131 @@
 body {
-    background-color: #d5c8b9;
+    color: goldenrod;
+    background: #d5c8b9;
+    line-height: 2;
+    font-family: 'EB Garamond', serif;
     margin: 0;
 }
 
-header {
-    background-color: #c7b6a2;
-    padding-top: 10px;
-}
-
 nav {
-    background-color: #8a6f4d;
-    padding: 10px;
+  background-color: #8a6f4d;
+  padding: 10px;
 }
 
 #menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 25px;
-    font-family: "Lora", serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+  font-family: "Lora", serif;
 }
 
 #menu a {
-    color: black;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
+  color: black;
+  text-decoration: none;
 }
 
 #menu a:hover {
-    color: #1a2536;
-    border-bottom: 2px solid #c9a063;
+  color: #1a2536;
+  border-bottom: 2px solid #c9a063;
 }
+ 
+#shimeji {
+  position: fixed;
+  bottom: 0;
+  left: 100px;
 
-header h1 {
-    text-align: center;
-    margin: 0 0 15px;
-    font-family: "Caesar Dressing", serif;
-    color: black;
+  width: 96px;
+
+  user-select: none;
+  cursor: grab;
+
+  z-index: 999999;
+
+  transition: transform 0.15s linear;
 }
-
 .rostinho {
     padding: 90px 32px 70px;
-    text-align: center;
-    background-color: #d5c8b9;
+    text-align: left;
+    background: #d5c8b9;
+    position: relative;
 }
+ 
 
-.bem-vindo {
-    display: inline-block;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #1a2536;
-    background-color: #d5c8b9;
-    padding: 5px 14px;
-    border-radius: 100px;
-    margin-bottom: 22px;
-}
-
-.rostinho h1 {
-    font-family: "Cinzel", serif;
-    font-size: clamp(2rem, 5vw, 3.2rem);
+.rostinho h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.25;
     max-width: 680px;
-    margin: 0 auto 18px;
-    color: #3f2f1f;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, .15);
+    margin: 0 0 18px;
+    color: #6b4f14;
 }
-
-.rostinho h1 span {
+ 
+.rostinho h2 span {
     color: goldenrod;
+    font-style: italic;
 }
-
+ 
 .rostinho p {
-    font-size: 1.05rem;
-    color: #3f2f1f;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: rgb(147, 109, 13);
     max-width: 520px;
-    margin: 0 auto 36px;
-    font-family: "Lora", serif;
+    margin: 0 0 10px;
 }
-
-.rostinho-buttons {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+ 
 
 .curiosidades {
     padding: 70px 32px;
-    background-color: #d5c8b9;
+    background: #d5c8b9;
 }
-
+ 
 .curiosidades-header {
-    text-align: center;
+    text-align: left;
     max-width: 560px;
-    margin: 0 auto 44px;
+    margin: 0 0 48px;
 }
-
+ 
 .curiosidades-header h2 {
-    font-family: "Cinzel", serif;
-    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
     font-weight: 700;
     margin-bottom: 10px;
+    color: #6b4f14;
 }
-
+ 
 .curiosidades-header p {
-    color: #1a2536;
-    font-size: 0.95rem;
+    color: rgb(147, 109, 13);
+    font-size: 1rem;
+    font-style: italic;
 }
-
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
+ 
 .card {
-    background: #f6efe5;
-    padding: 25px;
-    border-radius: 18px;
-    border: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
-    transition: .3s;
+    background: rgb(255, 225, 148);
+    padding: 30px 26px;
+    border: 1px solid #c9a063;
+    border-top: 1px solid #8a6d3b;
+    position: relative;
 }
-
-.card h3 {
-    font-family: "Cinzel", serif;
-    font-size: 1rem;
+ 
+.card h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    color: #6b4f14;
 }
-
+ 
 .card p {
     color: goldenrod;
-    font-size: 0.9rem;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .25);
-}
-
-nav {
-    background-color: #8a6f4d;
-    padding: 10px;
-}
-
-header h1 {
-    text-align: center;
-    margin: 0 0 15px;
-    font-family: "Caesar dressing", serif;
-}
-
-section {
-    margin-top: 60px;
-}
-
-#shimeji {
-    position: fixed;
-    bottom: 0;
-    left: 100px;
-
-    width: 96px;
-
-    user-select: none;
-    cursor: grab;
-
-    z-index: 999999;
-
-    transition: transform 0.15s linear;
-}
-
-table {
-    width: 80%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background-color: #f6efe5;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
-}
-
-th {
-    background-color: #8a6f4d;
-    color: white;
-    padding: 15px;
-}
-
-td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #c9a063;
-}
-
-.tabela {
-    text-align: center;
-    font-size: 25px;
-    font-family: "Cinzel", serif;
-}
-
-footer {
-    background-color: #c7b6a2;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
+    font-size: 0.95rem;
+    font-family: 'EB Garamond', serif;
 }
